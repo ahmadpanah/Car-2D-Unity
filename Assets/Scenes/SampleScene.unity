@@ -327,6 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 595598387}
   - component: {fileID: 595598388}
+  - component: {fileID: 595598389}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -369,6 +370,19 @@ MonoBehaviour:
   - {fileID: 183838, guid: 384aea985b03744478ae103e04ec6715, type: 3}
   - {fileID: 178192, guid: 16e3767e137ac4d72a3c4b489e555f9b, type: 3}
   - {fileID: 117612, guid: 553f3d7d25fcb410e90399baccc8e68a, type: 3}
+--- !u!114 &595598389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595598386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d20733c0a879a4b8a2209b32ba1506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefabs: {fileID: 3201251351775426185, guid: a1c5eb14bcf14e94796c57b89a61880c, type: 3}
 --- !u!1 &1396091515
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +584,7 @@ MonoBehaviour:
   transform: {fileID: 1683623901}
   speed: 1.5
   rotationSpeed: 5
+  score: {fileID: 1683623905}
 --- !u!50 &1683623903
 Rigidbody2D:
   serializedVersion: 4
