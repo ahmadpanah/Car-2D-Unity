@@ -584,7 +584,7 @@ MonoBehaviour:
   transform: {fileID: 1683623901}
   speed: 1.5
   rotationSpeed: 5
-  score: {fileID: 1683623905}
+  score_Value: {fileID: 1683623905}
 --- !u!50 &1683623903
 Rigidbody2D:
   serializedVersion: 4
@@ -645,6 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  highScore: 0
   scoreText: {fileID: 1914887683}
 --- !u!1 &1914887681
 GameObject:
