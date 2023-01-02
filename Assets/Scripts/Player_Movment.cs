@@ -9,10 +9,13 @@ public class Player_Movment : MonoBehaviour
     public float rotationSpeed = 5f;
     public  AudioSource CoinSound;
     public Score_Manager score_Value;
+
+    public GameObject gameOverPanel;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameOverPanel.SetActive(false);
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -59,6 +62,7 @@ public class Player_Movment : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Cars"){
                Time.timeScale = 0 ;
+               gameOverPanel.SetActive(true);
         }
         if (collision.gameObject.tag == "Coin"){
                CoinSound.Play();
